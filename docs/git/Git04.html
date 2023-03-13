@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git分支管理 | 南北の阅览室</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/favicon.ico">
+    <script language="javascript" type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/MouseClickEffect.js"></script>
+    <meta name="description" content="This is my blog!">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.9f050814.css" as="style"><link rel="preload" href="/assets/js/app.5b1f6b16.js" as="script"><link rel="preload" href="/assets/js/3.72d1258c.js" as="script"><link rel="preload" href="/assets/js/1.18f8d782.js" as="script"><link rel="preload" href="/assets/js/14.91259ede.js" as="script"><link rel="prefetch" href="/assets/js/10.9d97180f.js"><link rel="prefetch" href="/assets/js/11.42698a94.js"><link rel="prefetch" href="/assets/js/12.db77fefc.js"><link rel="prefetch" href="/assets/js/13.8deb6ffc.js"><link rel="prefetch" href="/assets/js/15.3048d2ed.js"><link rel="prefetch" href="/assets/js/16.07926e39.js"><link rel="prefetch" href="/assets/js/17.6c6fc205.js"><link rel="prefetch" href="/assets/js/18.490b5aff.js"><link rel="prefetch" href="/assets/js/19.7ed37ace.js"><link rel="prefetch" href="/assets/js/20.13a133fc.js"><link rel="prefetch" href="/assets/js/21.7dcba688.js"><link rel="prefetch" href="/assets/js/22.c2ff1280.js"><link rel="prefetch" href="/assets/js/23.0e5571e2.js"><link rel="prefetch" href="/assets/js/24.2f3d8c00.js"><link rel="prefetch" href="/assets/js/25.e4ccca07.js"><link rel="prefetch" href="/assets/js/26.35960cf5.js"><link rel="prefetch" href="/assets/js/27.e70e923f.js"><link rel="prefetch" href="/assets/js/28.fc985fcb.js"><link rel="prefetch" href="/assets/js/29.d18c6b41.js"><link rel="prefetch" href="/assets/js/30.f2ba39fe.js"><link rel="prefetch" href="/assets/js/31.5a16d824.js"><link rel="prefetch" href="/assets/js/32.b0828667.js"><link rel="prefetch" href="/assets/js/33.00a69382.js"><link rel="prefetch" href="/assets/js/34.4f4f5ddf.js"><link rel="prefetch" href="/assets/js/35.275e0326.js"><link rel="prefetch" href="/assets/js/36.22faa77d.js"><link rel="prefetch" href="/assets/js/37.0d232624.js"><link rel="prefetch" href="/assets/js/38.d104e90e.js"><link rel="prefetch" href="/assets/js/39.f9c7a149.js"><link rel="prefetch" href="/assets/js/4.6ca11240.js"><link rel="prefetch" href="/assets/js/40.68d34fb8.js"><link rel="prefetch" href="/assets/js/5.23b7c0da.js"><link rel="prefetch" href="/assets/js/6.b021b072.js"><link rel="prefetch" href="/assets/js/7.e0c7f897.js"><link rel="prefetch" href="/assets/js/8.a9325ddb.js"><link rel="prefetch" href="/assets/js/9.9148a2b3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9f050814.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>南北の阅览室</h3> <p class="description" data-v-59e6cb88>This is my blog!</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>南北</span>
+          
+        <span data-v-59e6cb88>2020 - </span>
+        2023
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="南北の阅览室" class="logo"> <span class="site-name">南北の阅览室</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  博客
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-coding"></i>
+      工具篇
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/maven/" class="nav-link"><i class="undefined"></i>
+  Maven系列
+</a></li><li class="dropdown-item"><!----> <a href="/docs/git/" class="nav-link router-link-active"><i class="undefined"></i>
+  Git系列
+</a></li><li class="dropdown-item"><!----> <a href="/docs/docker/" class="nav-link"><i class="undefined"></i>
+  Docker系列
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      学习文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/mysql/" class="nav-link"><i class="undefined"></i>
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/docs/spring/" class="nav-link"><i class="undefined"></i>
+  Spring系列
+</a></li><li class="dropdown-item"><!----> <a href="/docs/mybatis/" class="nav-link"><i class="undefined"></i>
+  MyBatis系列
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/SouthNorth-byte" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    南北
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>2</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>2</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  博客
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-coding"></i>
+      工具篇
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/maven/" class="nav-link"><i class="undefined"></i>
+  Maven系列
+</a></li><li class="dropdown-item"><!----> <a href="/docs/git/" class="nav-link router-link-active"><i class="undefined"></i>
+  Git系列
+</a></li><li class="dropdown-item"><!----> <a href="/docs/docker/" class="nav-link"><i class="undefined"></i>
+  Docker系列
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      学习文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/mysql/" class="nav-link"><i class="undefined"></i>
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/docs/spring/" class="nav-link"><i class="undefined"></i>
+  Spring系列
+</a></li><li class="dropdown-item"><!----> <a href="/docs/mybatis/" class="nav-link"><i class="undefined"></i>
+  MyBatis系列
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/SouthNorth-byte" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><a href="/docs/git/" aria-current="page" class="sidebar-link">Git系列</a></li><li><a href="/docs/git/Git00.html" class="sidebar-link">Git概述</a></li><li><a href="/docs/git/Git01.html" class="sidebar-link">Git工作流程</a></li><li><a href="/docs/git/Git02.html" class="sidebar-link">Git建立仓库</a></li><li><a href="/docs/git/Git03.html" class="sidebar-link">Git基本操作</a></li><li><a href="/docs/git/Git04.html" aria-current="page" class="active sidebar-link">Git分支管理</a></li><li><a href="/docs/git/Git05.html" class="sidebar-link">Git提交历史和标签</a></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>Git分支管理</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>南北</span>
+          
+        <span data-v-59e6cb88>2020 - </span>
+        2023
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">Git分支管理</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>南北</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>5/29/2020</span></i> <!----> <!----></div></div> <div class="theme-reco-content content__default"><div class="custom-block tip"><p class="title"></p><p>Git分支(branch)是Git中比较困难的部分，这章我们来看一下Git的分支管理！</p></div><h2 id="分支"><a href="#分支" class="header-anchor">#</a> 分支</h2> <p>几乎每一种版本控制系统都以某种形式支持分支，一个分支代表一条独立的开发线。</p> <p>使用分支意味着你可以从开发主线上分离开来，然后在不影响主线的同时继续工作。</p> <img src="/assets/img/git-brance.f52e49c2.svg" alt="git"> <p>Git 分支实际上是指向更改快照的指针。</p> <p>有人把 Git 的分支模型称为<strong>必杀技特性</strong>，而正是因为它，将 <strong>Git</strong> 从版本控制系统家族里区分出来。</p> <h3 id="创建分支"><a href="#创建分支" class="header-anchor">#</a> 创建分支</h3> <p>创建分支命令：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">git</span> branch <span class="token punctuation">(</span>branchname<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="切换分支"><a href="#切换分支" class="header-anchor">#</a> 切换分支</h3> <p>切换分支命令:</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">git</span> checkout <span class="token punctuation">(</span>branchname<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>当你切换分支的时候，Git 会用该分支的最后提交的快照替换你的工作目录的内容， 所以多个分支不需要多个目录。</p> <p><strong>为了方便演示</strong>，开始前我们先创建一个测试目录：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">mkdir</span> gitdemo
+$ <span class="token builtin class-name">cd</span> gitdemo/
+$ <span class="token function">git</span> init
+Initialized empty Git repository<span class="token punctuation">..</span>.
+$ <span class="token function">touch</span> README
+$ <span class="token function">git</span> <span class="token function">add</span> README
+$ <span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">'第一次版本提交'</span>
+<span class="token punctuation">[</span>master <span class="token punctuation">(</span>root-commit<span class="token punctuation">)</span> 3b58100<span class="token punctuation">]</span> 第一次版本提交
+ <span class="token number">1</span> <span class="token function">file</span> changed, <span class="token number">0</span> insertions<span class="token punctuation">(</span>+<span class="token punctuation">)</span>, <span class="token number">0</span> deletions<span class="token punctuation">(</span>-<span class="token punctuation">)</span>
+ create mode <span class="token number">100644</span> README
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="列出分支"><a href="#列出分支" class="header-anchor">#</a> 列出分支</h3> <p>列出分支基本命令：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">git</span> branch
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>没有参数时，<strong>git branch</strong> 会列出你在本地的分支。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">git</span> branch
+* master
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>此例的意思就是，我们有一个叫做 <strong>master</strong> 的分支，并且该分支是当前分支。</p> <p>当你执行 <strong>git init</strong> 的时候，默认情况下 Git 就会为你创建 <strong>master</strong> 分支。</p> <p>如果我们要手动创建一个分支。执行 <strong>git branch (branchname)</strong> 即可。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">git</span> branch testing
+$ <span class="token function">git</span> branch
+* master
+  testing
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>现在我们可以看到，有了一个新分支 <strong>testing</strong>。</p> <p>当你以此方式在上次提交更新之后创建了新分支，如果后来又有更新提交， 然后又切换到了 <strong>testing</strong> 分支，Git 将还原你的工作目录到你创建分支时候的样子。</p> <p>接下来我们将演示如何切换分支，我们用 git checkout (branch) 切换到我们要修改的分支。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">ls</span>
+README
+$ <span class="token builtin class-name">echo</span> <span class="token string">'southnorth.top'</span> <span class="token operator">&gt;</span> test.txt
+$ <span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+$ <span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">'add test.txt'</span>
+<span class="token punctuation">[</span>master 3e92c19<span class="token punctuation">]</span> <span class="token function">add</span> test.txt
+ <span class="token number">1</span> <span class="token function">file</span> changed, <span class="token number">1</span> insertion<span class="token punctuation">(</span>+<span class="token punctuation">)</span>
+ create mode <span class="token number">100644</span> test.txt
+$ <span class="token function">ls</span>
+README        test.txt
+$ <span class="token function">git</span> checkout testing
+Switched to branch <span class="token string">'testing'</span>
+$ <span class="token function">ls</span>
+README
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>当我们切换到 <strong>testing</strong> 分支的时候，我们添加的新文件 test.txt 被移除了。切换回 <strong>master</strong> 分支的时候，它们又重新出现了。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">git</span> checkout master
+Switched to branch <span class="token string">'master'</span>
+$ <span class="token function">ls</span>
+README        test.txt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>我们也可以使用 git checkout -b (branchname) 命令来创建新分支并立即切换到该分支下，从而在该分支中操作。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">git</span> checkout <span class="token parameter variable">-b</span> newtesting
+Switched to a new branch <span class="token string">'newtesting'</span>
+$ <span class="token function">git</span> <span class="token function">rm</span> test.txt 
+<span class="token function">rm</span> <span class="token string">'test.txt'</span>
+$ <span class="token function">ls</span>
+README
+$ <span class="token function">touch</span> southnorth.php
+$ <span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+$ <span class="token function">git</span> commit <span class="token parameter variable">-am</span> <span class="token string">'removed test.txt、add southnorth.php'</span>
+<span class="token punctuation">[</span>newtesting c1501a2<span class="token punctuation">]</span> removed test.txt、add southnorth.php
+ <span class="token number">2</span> files changed, <span class="token number">1</span> deletion<span class="token punctuation">(</span>-<span class="token punctuation">)</span>
+ create mode <span class="token number">100644</span> southnorth.php
+ delete mode <span class="token number">100644</span> test.txt
+$ <span class="token function">ls</span>
+README        southnorth.php
+$ <span class="token function">git</span> checkout master
+Switched to branch <span class="token string">'master'</span>
+$ <span class="token function">ls</span>
+README        test.txt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p>如你所见，我们创建了一个分支，在该分支上移除了一些文件 test.txt，并添加了 southnorth.php 文件，然后切换回我们的主分支，删除的 test.txt 文件又回来了，且新增加的 southnorth.php 不存在主分支中。</p> <p>使用分支将工作切分开来，从而让我们能够在不同开发环境中做事，并来回切换。</p> <h3 id="删除分支"><a href="#删除分支" class="header-anchor">#</a> 删除分支</h3> <p>删除分支命令：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">git</span> branch <span class="token parameter variable">-d</span> <span class="token punctuation">(</span>branchname<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>例如我们要删除 testing 分支：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">git</span> branch
+* master
+  testing
+  newtesting
+$ <span class="token function">git</span> branch <span class="token parameter variable">-d</span> testing
+Deleted branch testing <span class="token punctuation">(</span>was 85fc7e7<span class="token punctuation">)</span>.
+$ <span class="token function">git</span> branch
+* master
+  newtesting
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="合并分支"><a href="#合并分支" class="header-anchor">#</a> 合并分支</h3> <p>合并分支命令:</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">git</span> merge 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>你可以多次合并到统一分支， 也可以选择在合并之后直接删除被并入的分支。</p> <p>一旦某分支有了独立内容，你终究会希望将它合并回到你的主分支。 你可以使用以下命令将任何分支合并到当前分支中去：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> merge
+$ <span class="token function">git</span> branch
+* master
+  newtesting
+$ <span class="token function">ls</span>
+README        test.txt
+$ <span class="token function">git</span> merge newtesting
+Updating 3e92c19<span class="token punctuation">..</span>c1501a2
+Fast-forward
+ southnorth.php <span class="token operator">|</span> <span class="token number">0</span>
+ test.txt   <span class="token operator">|</span> <span class="token number">1</span> -
+ <span class="token number">2</span> files changed, <span class="token number">1</span> deletion<span class="token punctuation">(</span>-<span class="token punctuation">)</span>
+ create mode <span class="token number">100644</span> southnorth.php
+ delete mode <span class="token number">100644</span> test.txt
+$ <span class="token function">ls</span>
+README        southnorth.php
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>以上实例中我们将 newtesting 分支合并到主分支去，southnorth.php被添加，test.txt 文件被删除。</p> <p>合并完后就可以删除分支:</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">git</span> branch <span class="token parameter variable">-d</span> newtesting
+Deleted branch newtesting <span class="token punctuation">(</span>was c1501a2<span class="token punctuation">)</span>.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>删除后， 就只剩下 master 分支了：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">git</span> branch
+* master
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="合并冲突"><a href="#合并冲突" class="header-anchor">#</a> 合并冲突</h3> <p>合并并不仅仅是简单的文件添加、移除的操作，Git 也会合并修改。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">git</span> branch
+* master
+$ <span class="token function">cat</span> southnorth.php
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>首先，我们创建一个叫做 change_site 的分支，切换过去，我们将 southnorth.php 内容改为:</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token operator">&lt;</span>?php
+<span class="token builtin class-name">echo</span> <span class="token string">'southnorth'</span><span class="token punctuation">;</span>
+?<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>创建 change_site 分支：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">git</span> checkout <span class="token parameter variable">-b</span> change_site
+Switched to a new branch <span class="token string">'change_site'</span>
+$ <span class="token function">vim</span> southnorth.php
+$ <span class="token function">head</span> <span class="token parameter variable">-3</span> southnorth.php
+<span class="token operator">&lt;</span>?php
+<span class="token builtin class-name">echo</span> <span class="token string">'southnorth'</span><span class="token punctuation">;</span>
+?<span class="token operator">&gt;</span>
+$ <span class="token function">git</span> commit <span class="token parameter variable">-am</span> <span class="token string">'changed the southnorth.php'</span>
+<span class="token punctuation">[</span>change_site <span class="token number">7774248</span><span class="token punctuation">]</span> changed the southnorth.php
+ <span class="token number">1</span> <span class="token function">file</span> changed, <span class="token number">3</span> insertions<span class="token punctuation">(</span>+<span class="token punctuation">)</span>
+ 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>将修改的内容提交到 change_site 分支中。 现在，假如切换回 master 分支我们可以看内容恢复到我们修改前的(空文件，没有代码)，我们再次修改 southnorth.php 文件。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">git</span> checkout master
+Switched to branch <span class="token string">'master'</span>
+$ <span class="token function">cat</span> southnorth.php
+$ <span class="token function">vim</span> southnorth.php    <span class="token comment"># 修改内容如下</span>
+$ <span class="token function">cat</span> southnorth.php
+<span class="token operator">&lt;</span>?php
+<span class="token builtin class-name">echo</span> <span class="token number">1</span><span class="token punctuation">;</span>
+?<span class="token operator">&gt;</span>
+$ <span class="token function">git</span> <span class="token function">diff</span>
+<span class="token function">diff</span> <span class="token parameter variable">--git</span> a/southnorth.php b/southnorth.php
+index e69de29<span class="token punctuation">..</span>ac60739 <span class="token number">100644</span>
+--- a/southnorth.php
++++ b/southnorth.php
+@@ -0,0 +1,3 @@
++<span class="token operator">&lt;</span>?php
++echo <span class="token number">1</span><span class="token punctuation">;</span>
++?<span class="token operator">&gt;</span>
+$ <span class="token function">git</span> commit <span class="token parameter variable">-am</span> <span class="token string">'修改代码'</span>
+<span class="token punctuation">[</span>master c68142b<span class="token punctuation">]</span> 修改代码
+ <span class="token number">1</span> <span class="token function">file</span> changed, <span class="token number">3</span> insertions<span class="token punctuation">(</span>+<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>现在这些改变已经记录到我的 &quot;master&quot; 分支了。接下来我们将 &quot;change_site&quot; 分支合并过来。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">git</span> merge change_site
+Auto-merging southnorth.php
+CONFLICT <span class="token punctuation">(</span>content<span class="token punctuation">)</span>: Merge conflict <span class="token keyword">in</span> southnorth.php
+Automatic merge failed<span class="token punctuation">;</span> fix conflicts and <span class="token keyword">then</span> commit the result.
+
+$ <span class="token function">cat</span> southnorth.php     <span class="token comment"># 打开文件，看到冲突内容</span>
+<span class="token operator">&lt;</span>?php
+<span class="token operator">&lt;&lt;&lt;</span><span class="token operator">&lt;&lt;&lt;</span><span class="token operator">&lt;</span> HEAD
+<span class="token builtin class-name">echo</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>
+<span class="token builtin class-name">echo</span> <span class="token string">'southnorth'</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> change_site
+?<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>我们将前一个分支合并到 master 分支，一个合并冲突就出现了，接下来我们需要手动去修改它。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">vim</span> southnorth.php 
+$ <span class="token function">cat</span> southnorth.php
+<span class="token operator">&lt;</span>?php
+<span class="token builtin class-name">echo</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token builtin class-name">echo</span> <span class="token string">'southnorth'</span><span class="token punctuation">;</span>
+?<span class="token operator">&gt;</span>
+$ <span class="token function">git</span> <span class="token function">diff</span>
+<span class="token function">diff</span> <span class="token parameter variable">--cc</span> southnorth.php
+index ac60739,b63d7d7<span class="token punctuation">..</span>0000000
+--- a/southnorth.php
++++ b/southnorth.php
+@@@ -1,3 -1,3 +1,4 @@@
+  <span class="token operator">&lt;</span>?php
+ +echo <span class="token number">1</span><span class="token punctuation">;</span>
++ <span class="token builtin class-name">echo</span> <span class="token string">'southnorth'</span><span class="token punctuation">;</span>
+  ?<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>在 Git 中，我们可以用 git add 要告诉 Git 文件冲突已经解决</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">git</span> status <span class="token parameter variable">-s</span>
+UU southnorth.php
+$ <span class="token function">git</span> <span class="token function">add</span> southnorth.php
+$ <span class="token function">git</span> status <span class="token parameter variable">-s</span>
+M  southnorth.php
+$ <span class="token function">git</span> commit
+<span class="token punctuation">[</span>master 88afe0e<span class="token punctuation">]</span> Merge branch <span class="token string">'change_site'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>现在我们成功解决了合并中的冲突，并提交了结果。</p></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/docs/git/Git03.html" class="prev">
+          Git基本操作
+        </a></span> <span class="next"><a href="/docs/git/Git05.html">
+          Git提交历史和标签
+        </a></span></p></div> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/docs/git/Git04.html#分支" class="sidebar-link reco-side-分支" data-v-b57cc07c>分支</a></li><li class="level-3" data-v-b57cc07c><a href="/docs/git/Git04.html#创建分支" class="sidebar-link reco-side-创建分支" data-v-b57cc07c>创建分支</a></li><li class="level-3" data-v-b57cc07c><a href="/docs/git/Git04.html#切换分支" class="sidebar-link reco-side-切换分支" data-v-b57cc07c>切换分支</a></li><li class="level-3" data-v-b57cc07c><a href="/docs/git/Git04.html#列出分支" class="sidebar-link reco-side-列出分支" data-v-b57cc07c>列出分支</a></li><li class="level-3" data-v-b57cc07c><a href="/docs/git/Git04.html#删除分支" class="sidebar-link reco-side-删除分支" data-v-b57cc07c>删除分支</a></li><li class="level-3" data-v-b57cc07c><a href="/docs/git/Git04.html#合并分支" class="sidebar-link reco-side-合并分支" data-v-b57cc07c>合并分支</a></li><li class="level-3" data-v-b57cc07c><a href="/docs/git/Git04.html#合并冲突" class="sidebar-link reco-side-合并冲突" data-v-b57cc07c>合并冲突</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;right:30px;bottom:0px;width:135px;height:300px;z-index:99999;opacity:1;pointer-events:none;"><canvas id="live2d_canvas" width="135" height="300" class="live2d_canvas" style="position:absolute;left:0px;top:0px;width:135px;height:300px;"></canvas></div></div></div>
+    <script src="/assets/js/app.5b1f6b16.js" defer></script><script src="/assets/js/3.72d1258c.js" defer></script><script src="/assets/js/1.18f8d782.js" defer></script><script src="/assets/js/14.91259ede.js" defer></script>
+  </body>
+</html>
